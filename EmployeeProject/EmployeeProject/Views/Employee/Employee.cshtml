@@ -1,0 +1,41 @@
+﻿@model EmployeeProject.Context.tbl_Emp
+
+@{
+    ViewBag.Title = "Employee";
+}
+
+<h2>Employee Details</h2>
+
+@using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post))
+{
+<div class="container">
+    <div class="form-group">
+        <label>Employee Id</label>
+        @Html.TextBoxFor(x => x.empid, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Employee Name</label>
+        @Html.TextBoxFor(x => x.empname, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Employee Email Address</label>
+        @Html.TextBoxFor(x => x.emp_email, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <label>Employee Location</label>
+        @Html.TextBoxFor(x => x.emp_location, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Submit</button>
+
+    </div>
+</div>
+}
