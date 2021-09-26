@@ -9,7 +9,7 @@ namespace EmployeeProject.Controllers
 {
     public class EmployeeController : Controller
     {
-        // GET: Employee
+        // GET: Employee 
         db_EmpEntities dbObj = new db_EmpEntities();
         public ActionResult Employee()
         {
